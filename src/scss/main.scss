@@ -1,0 +1,134 @@
+@import "~normalize-css/normalize.css";
+@import "~susy/sass/susy";
+
+$susy: (
+    columns: 12,
+    container: 2300px,
+    // debug: (image: show),
+
+);
+
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+//____________________GRID________________________//
+.container {
+    @include container;
+}
+
+
+.col-1 {
+    @include span(1 of 12);
+}
+
+
+
+.col-2 {
+    @include span(2 of 12);
+}
+
+
+.col-3 {
+    @include span(3 of 12);
+}
+
+
+.col-4 {
+    @include span(4 of 12);
+}
+
+
+.col-5 {
+    @include span(5 of 12);
+}
+
+
+.col-6 {
+    @include span(6 of 12);
+}
+
+
+.col-7 {
+    @include span(7 of 12);
+}
+
+
+.col-8 {
+    @include span(8 of 12);
+}
+
+
+.col-9 {
+    @include span(9 of 12);
+}
+
+
+.col-10 {
+    @include span(10  of 12);
+}
+
+
+.col-11 {
+    @include span(11 of 12);
+}
+
+
+.col-12 {
+    @include span(12 of 12);
+}
+
+
+//_______________GALLERY______________//
+
+.gal-1{
+    @include gallery(1 of 12);
+}
+
+.gal-2{
+    @include gallery(2 of 12);
+}
+
+.gal-3{
+    @include gallery(3 of 12);
+}
+
+.gal-4{
+    @include gallery(4 of 12);
+}
+
+.gal-5{
+    @include gallery(5 of 12);
+}
+
+.gal-6{
+    @include gallery(6 of 12);
+}
+
+.gal-7{
+    @include gallery(7 of 12);
+}
+
+.gal-8{
+    @include gallery(8 of 12);
+}
+
+.gal-9{
+    @include gallery(9 of 12);
+}
+
+.gal-10{
+    @include gallery(10 of 12);
+}
+
+.gal-11{
+    @include gallery(11 of 12);
+}
+
+.gal-12{
+    @include gallery(12 of 12);
+}
