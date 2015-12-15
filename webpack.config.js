@@ -1,4 +1,6 @@
-var webpack = require('webpack')
+var webpack = require('webpack'),
+    sassGlobals = require('./sassVars.json'),
+    sassVars = JSON.stringify(sassGlobals);
 
 module.exports = {
     entry: './src/main.js',
@@ -31,7 +33,11 @@ module.exports = {
     },
     // example: if you wish to apply custom babel options
     // instead of using vue-loader's default:
-
+    vue: {
+        loaders: {
+            sass: "style!css!sass!jsontosass?" + sassVars
+        }
+    },
 
     babel: {
         presets: ['es2015', 'stage-0'],
